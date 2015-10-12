@@ -30,9 +30,6 @@
 		6A9531BF17FDB306004C3FBA /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6A9531BE17FDB306004C3FBA /* QuartzCore.framework */; };
 		6A9531C117FDB30B004C3FBA /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6A9531C017FDB30B004C3FBA /* CFNetwork.framework */; };
 		6A9531C317FDB328004C3FBA /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6A9531C217FDB328004C3FBA /* Security.framework */; };
-		6A9531DC17FDC555004C3FBA /* base64.c in Sources */ = {isa = PBXBuildFile; fileRef = 6A9531D517FDC555004C3FBA /* base64.c */; };
-		6A9531DD17FDC555004C3FBA /* NSData+SRB64Additions.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A9531D817FDC555004C3FBA /* NSData+SRB64Additions.m */; };
-		6A9531DE17FDC555004C3FBA /* SRWebSocket.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A9531DB17FDC555004C3FBA /* SRWebSocket.m */; };
 		6A9531E017FDC63E004C3FBA /* libicucore.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 6A9531DF17FDC63E004C3FBA /* libicucore.dylib */; };
 		6A977B461805B99400A9AC5D /* app_Icon57.png in Resources */ = {isa = PBXBuildFile; fileRef = 6A977B441805B99300A9AC5D /* app_Icon57.png */; };
 		6A977B471805B99400A9AC5D /* app_Icon57@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 6A977B451805B99300A9AC5D /* app_Icon57@2x.png */; };
@@ -43,7 +40,6 @@
 		6A97A791180D9B03007A1066 /* ComposeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6A97A78B180D9B03007A1066 /* ComposeViewController.xib */; };
 		6A97A792180D9B03007A1066 /* MessageTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A97A78D180D9B03007A1066 /* MessageTableViewCell.m */; };
 		6A97A793180D9B03007A1066 /* SpeechBubbleView.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A97A78F180D9B03007A1066 /* SpeechBubbleView.m */; };
-		6AA6E51018452C0000AAC1EC /* libOrtcClient.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 6ACB66E9183BCEFA004AF373 /* libOrtcClient.a */; };
 		6AE2549717FEC12F00A54070 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6AE2549617FEC12F00A54070 /* SystemConfiguration.framework */; };
 		6AE309D9182A95370028C3C5 /* ballon_left.png in Resources */ = {isa = PBXBuildFile; fileRef = 6AE309D5182A95370028C3C5 /* ballon_left.png */; };
 		6AE309DA182A95370028C3C5 /* ballon_left@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 6AE309D6182A95370028C3C5 /* ballon_left@2x.png */; };
@@ -51,9 +47,11 @@
 		6AE309DC182A95370028C3C5 /* ballon_right@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 6AE309D8182A95370028C3C5 /* ballon_right@2x.png */; };
 		6AEDBC0118041AB4001BB7F9 /* ChatViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6AEDBBFF18041AB4001BB7F9 /* ChatViewController.m */; };
 		6AEDBC0218041AB4001BB7F9 /* ChatViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6AEDBC0018041AB4001BB7F9 /* ChatViewController.xib */; };
+		DAFC8996D90FB75323F17A3B /* libPods-RTMChat.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 7FD57CFF388245C4EC7AE850 /* libPods-RTMChat.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		28207224DCBBD308E4C2280A /* Pods-RTMChat.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RTMChat.release.xcconfig"; path = "Pods/Target Support Files/Pods-RTMChat/Pods-RTMChat.release.xcconfig"; sourceTree = "<group>"; };
 		6A0D06FA1802E287000EBDEE /* settingsIcon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "settingsIcon@2x.png"; sourceTree = "<group>"; };
 		6A0D06FD1802E298000EBDEE /* settingsIcon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = settingsIcon.png; sourceTree = "<group>"; };
 		6A0D070D18032D05000EBDEE /* Reachability.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Reachability.h; path = Utils/Reachability.h; sourceTree = "<group>"; };
@@ -83,13 +81,6 @@
 		6A9531BE17FDB306004C3FBA /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
 		6A9531C017FDB30B004C3FBA /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
 		6A9531C217FDB328004C3FBA /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
-		6A9531D517FDC555004C3FBA /* base64.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; lineEnding = 0; path = base64.c; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.c; };
-		6A9531D617FDC555004C3FBA /* base64.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = base64.h; sourceTree = "<group>"; };
-		6A9531D717FDC555004C3FBA /* NSData+SRB64Additions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSData+SRB64Additions.h"; sourceTree = "<group>"; };
-		6A9531D817FDC555004C3FBA /* NSData+SRB64Additions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSData+SRB64Additions.m"; sourceTree = "<group>"; };
-		6A9531D917FDC555004C3FBA /* SocketRocket-Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "SocketRocket-Prefix.pch"; sourceTree = "<group>"; };
-		6A9531DA17FDC555004C3FBA /* SRWebSocket.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SRWebSocket.h; sourceTree = "<group>"; };
-		6A9531DB17FDC555004C3FBA /* SRWebSocket.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SRWebSocket.m; sourceTree = "<group>"; };
 		6A9531DF17FDC63E004C3FBA /* libicucore.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libicucore.dylib; path = usr/lib/libicucore.dylib; sourceTree = SDKROOT; };
 		6A977B441805B99300A9AC5D /* app_Icon57.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = app_Icon57.png; sourceTree = "<group>"; };
 		6A977B451805B99300A9AC5D /* app_Icon57@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "app_Icon57@2x.png"; sourceTree = "<group>"; };
@@ -106,9 +97,6 @@
 		6A97A78D180D9B03007A1066 /* MessageTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MessageTableViewCell.m; sourceTree = "<group>"; };
 		6A97A78E180D9B03007A1066 /* SpeechBubbleView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SpeechBubbleView.h; sourceTree = "<group>"; };
 		6A97A78F180D9B03007A1066 /* SpeechBubbleView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SpeechBubbleView.m; sourceTree = "<group>"; };
-		6ACB66C7183B93A3004AF373 /* OrtcClient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OrtcClient.h; sourceTree = "<group>"; };
-		6ACB66C8183B93A3004AF373 /* RealtimePushAppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RealtimePushAppDelegate.h; sourceTree = "<group>"; };
-		6ACB66E9183BCEFA004AF373 /* libOrtcClient.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libOrtcClient.a; sourceTree = "<group>"; };
 		6AE2549617FEC12F00A54070 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
 		6AE309D5182A95370028C3C5 /* ballon_left.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ballon_left.png; sourceTree = "<group>"; };
 		6AE309D6182A95370028C3C5 /* ballon_left@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ballon_left@2x.png"; sourceTree = "<group>"; };
@@ -117,6 +105,8 @@
 		6AEDBBFE18041AB4001BB7F9 /* ChatViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; lineEnding = 0; path = ChatViewController.h; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objcpp; };
 		6AEDBBFF18041AB4001BB7F9 /* ChatViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; lineEnding = 0; path = ChatViewController.m; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objc; };
 		6AEDBC0018041AB4001BB7F9 /* ChatViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ChatViewController.xib; sourceTree = "<group>"; };
+		7FD57CFF388245C4EC7AE850 /* libPods-RTMChat.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-RTMChat.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		B25AAADC80A1B80A2F8BCF2C /* Pods-RTMChat.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RTMChat.debug.xcconfig"; path = "Pods/Target Support Files/Pods-RTMChat/Pods-RTMChat.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -124,7 +114,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				6AA6E51018452C0000AAC1EC /* libOrtcClient.a in Frameworks */,
 				6AE2549717FEC12F00A54070 /* SystemConfiguration.framework in Frameworks */,
 				6A9531E017FDC63E004C3FBA /* libicucore.dylib in Frameworks */,
 				6A9531C317FDB328004C3FBA /* Security.framework in Frameworks */,
@@ -134,6 +123,7 @@
 				6A95319817FD92A9004C3FBA /* Foundation.framework in Frameworks */,
 				6A95319A17FD92A9004C3FBA /* CoreGraphics.framework in Frameworks */,
 				6A95319C17FD92A9004C3FBA /* CoreData.framework in Frameworks */,
+				DAFC8996D90FB75323F17A3B /* libPods-RTMChat.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -159,6 +149,7 @@
 				6A95319D17FD92A9004C3FBA /* RTMChat */,
 				6A95319417FD92A9004C3FBA /* Frameworks */,
 				6A95319317FD92A9004C3FBA /* Products */,
+				F5EFCB5ED0401ECEDC736BA0 /* Pods */,
 			);
 			sourceTree = "<group>";
 		};
@@ -182,6 +173,7 @@
 				6A9531BE17FDB306004C3FBA /* QuartzCore.framework */,
 				6A9531C217FDB328004C3FBA /* Security.framework */,
 				6A95319517FD92A9004C3FBA /* UIKit.framework */,
+				7FD57CFF388245C4EC7AE850 /* libPods-RTMChat.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -196,9 +188,7 @@
 				6A9531B717FD930E004C3FBA /* RootViewController.h */,
 				6A9531B817FD930E004C3FBA /* RootViewController.m */,
 				6A9531B917FD930E004C3FBA /* RootViewController.xib */,
-				6ACB66C3183B93A3004AF373 /* OrtcClientLib */,
 				6A9531BC17FD9326004C3FBA /* Classes */,
-				6A9531D417FDC555004C3FBA /* SocketRocket */,
 				6A9531BD17FD9326004C3FBA /* Resources */,
 				6A95319E17FD92A9004C3FBA /* Supporting Files */,
 			);
@@ -257,36 +247,13 @@
 			path = Resources;
 			sourceTree = "<group>";
 		};
-		6A9531D417FDC555004C3FBA /* SocketRocket */ = {
+		F5EFCB5ED0401ECEDC736BA0 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				6A9531D517FDC555004C3FBA /* base64.c */,
-				6A9531D617FDC555004C3FBA /* base64.h */,
-				6A9531D717FDC555004C3FBA /* NSData+SRB64Additions.h */,
-				6A9531D817FDC555004C3FBA /* NSData+SRB64Additions.m */,
-				6A9531D917FDC555004C3FBA /* SocketRocket-Prefix.pch */,
-				6A9531DA17FDC555004C3FBA /* SRWebSocket.h */,
-				6A9531DB17FDC555004C3FBA /* SRWebSocket.m */,
+				B25AAADC80A1B80A2F8BCF2C /* Pods-RTMChat.debug.xcconfig */,
+				28207224DCBBD308E4C2280A /* Pods-RTMChat.release.xcconfig */,
 			);
-			path = SocketRocket;
-			sourceTree = "<group>";
-		};
-		6ACB66C3183B93A3004AF373 /* OrtcClientLib */ = {
-			isa = PBXGroup;
-			children = (
-				6ACB66E9183BCEFA004AF373 /* libOrtcClient.a */,
-				6ACB66C6183B93A3004AF373 /* include */,
-			);
-			path = OrtcClientLib;
-			sourceTree = "<group>";
-		};
-		6ACB66C6183B93A3004AF373 /* include */ = {
-			isa = PBXGroup;
-			children = (
-				6ACB66C7183B93A3004AF373 /* OrtcClient.h */,
-				6ACB66C8183B93A3004AF373 /* RealtimePushAppDelegate.h */,
-			);
-			path = include;
+			name = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -296,9 +263,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 6A9531B417FD92A9004C3FBA /* Build configuration list for PBXNativeTarget "RTMChat" */;
 			buildPhases = (
+				8B7FA74A0E2D6E407077148C /* Check Pods Manifest.lock */,
 				6A95318E17FD92A9004C3FBA /* Sources */,
 				6A95318F17FD92A9004C3FBA /* Frameworks */,
 				6A95319017FD92A9004C3FBA /* Resources */,
+				995BD79482D7D6C0D5DC7429 /* Embed Pods Frameworks */,
+				ADDF734031389296C7CF7607 /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -317,6 +287,11 @@
 			attributes = {
 				LastUpgradeCheck = 0460;
 				ORGANIZATIONNAME = Realtime;
+				TargetAttributes = {
+					6A95319117FD92A9004C3FBA = {
+						DevelopmentTeam = JZ68U4HLTH;
+					};
+				};
 			};
 			buildConfigurationList = 6A95318D17FD92A9004C3FBA /* Build configuration list for PBXProject "RTMChat" */;
 			compatibilityVersion = "Xcode 3.2";
@@ -365,6 +340,54 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		8B7FA74A0E2D6E407077148C /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		995BD79482D7D6C0D5DC7429 /* Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-RTMChat/Pods-RTMChat-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		ADDF734031389296C7CF7607 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-RTMChat/Pods-RTMChat-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		6A95318E17FD92A9004C3FBA /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -377,9 +400,6 @@
 				6A97A793180D9B03007A1066 /* SpeechBubbleView.m in Sources */,
 				6A9531A817FD92A9004C3FBA /* AppDelegate.m in Sources */,
 				6A9531BA17FD930E004C3FBA /* RootViewController.m in Sources */,
-				6A9531DC17FDC555004C3FBA /* base64.c in Sources */,
-				6A9531DD17FDC555004C3FBA /* NSData+SRB64Additions.m in Sources */,
-				6A9531DE17FDC555004C3FBA /* SRWebSocket.m in Sources */,
 				6A0D071118032D05000EBDEE /* Reachability.m in Sources */,
 				6A97A792180D9B03007A1066 /* MessageTableViewCell.m in Sources */,
 				6A0D071218032D05000EBDEE /* Utils.m in Sources */,
@@ -467,10 +487,12 @@
 		};
 		6A9531B517FD92A9004C3FBA /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = B25AAADC80A1B80A2F8BCF2C /* Pods-RTMChat.debug.xcconfig */;
 			buildSettings = {
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				CODE_SIGN_IDENTITY = "iPhone Developer: joao caixinha (E3B5VJ3JFJ)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COMPRESS_PNG_FILES = YES;
+				ENABLE_BITCODE = NO;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "RTMChat/RTMChat-Prefix.pch";
 				INFOPLIST_FILE = "RTMChat/RTMChat-Info.plist";
@@ -478,8 +500,8 @@
 				LIBRARY_SEARCH_PATHS = "$(SRCROOT)/RTMChat/OrtcClientLib";
 				OTHER_CODE_SIGN_FLAGS = "";
 				PRODUCT_NAME = "RTM Chat";
-				PROVISIONING_PROFILE = "2844EA7D-C463-4553-A2EE-7352E015CCA4";
-				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "2844EA7D-C463-4553-A2EE-7352E015CCA4";
+				PROVISIONING_PROFILE = "";
+				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "";
 				SDKROOT = iphoneos;
 				WRAPPER_EXTENSION = app;
 			};
@@ -487,10 +509,12 @@
 		};
 		6A9531B617FD92A9004C3FBA /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 28207224DCBBD308E4C2280A /* Pods-RTMChat.release.xcconfig */;
 			buildSettings = {
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				CODE_SIGN_IDENTITY = "iPhone Developer: joao caixinha (E3B5VJ3JFJ)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COMPRESS_PNG_FILES = YES;
+				ENABLE_BITCODE = NO;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "RTMChat/RTMChat-Prefix.pch";
 				INFOPLIST_FILE = "RTMChat/RTMChat-Info.plist";
@@ -498,8 +522,8 @@
 				LIBRARY_SEARCH_PATHS = "$(SRCROOT)/RTMChat/OrtcClientLib";
 				OTHER_CODE_SIGN_FLAGS = "";
 				PRODUCT_NAME = "RTM Chat";
-				PROVISIONING_PROFILE = "2844EA7D-C463-4553-A2EE-7352E015CCA4";
-				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "2844EA7D-C463-4553-A2EE-7352E015CCA4";
+				PROVISIONING_PROFILE = "";
+				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "";
 				SDKROOT = iphoneos;
 				WRAPPER_EXTENSION = app;
 			};

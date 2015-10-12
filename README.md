@@ -10,6 +10,9 @@ This sample app uses the Realtime® Framework Pub/Sub Objective-C library to con
 
 ###This app is compatible with the Android sample. See [https://github.com/realtime-framework/MessagingAndroidChat](https://github.com/realtime-framework/MessagingAndroidChat)
 
+### Setup project
+
+*	Install [cocoapods](https://guides.cocoapods.org/using/getting-started.html#toc_3) and run command `pod install` on the podfile directory.
 
 > NOTE: For simplicity these samples assume you're using a Realtime® Framework developers' application key with the authentication service disabled (every connection will have permission to publish and subscribe to any channel). For security guidelines please refer to the [Security Guide](http://messaging-public.realtime.co/documentation/starting-guide/security.html). 
 > 

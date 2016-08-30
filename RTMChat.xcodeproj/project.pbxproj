@@ -497,7 +497,7 @@
 				GCC_PREFIX_HEADER = "RTMChat/RTMChat-Prefix.pch";
 				INFOPLIST_FILE = "RTMChat/RTMChat-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
-				LIBRARY_SEARCH_PATHS = "$(SRCROOT)/RTMChat/OrtcClientLib";
+				LIBRARY_SEARCH_PATHS = "$(inherited)";
 				OTHER_CODE_SIGN_FLAGS = "";
 				PRODUCT_NAME = "RTM Chat";
 				PROVISIONING_PROFILE = "";
@@ -519,7 +519,7 @@
 				GCC_PREFIX_HEADER = "RTMChat/RTMChat-Prefix.pch";
 				INFOPLIST_FILE = "RTMChat/RTMChat-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
-				LIBRARY_SEARCH_PATHS = "$(SRCROOT)/RTMChat/OrtcClientLib";
+				LIBRARY_SEARCH_PATHS = "$(inherited)";
 				OTHER_CODE_SIGN_FLAGS = "";
 				PRODUCT_NAME = "RTM Chat";
 				PROVISIONING_PROFILE = "";
